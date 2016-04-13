@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title></title>
+    </head>
+    <body>
+        <h2>body of the iframed page</h2>
+
+        <button type="submit" onclick="sendMessage()">SEND</button>
+        <script type="text/javascript" charset="utf-8">
+console.log(window.name);
+    function sendMessage(){
+    parent.postMessage("I am under the doom of yours, master",'http://localhost:9999');
+    }
+        </script>
+    </body>
+</html>
